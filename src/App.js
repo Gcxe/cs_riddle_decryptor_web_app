@@ -1,6 +1,43 @@
 import React, { useState } from "react";
 import "./App.css";
 
+// HintSection component
+function HintSection() {
+  const [showHint, setShowHint] = useState(false);
+
+  return (
+    <div style={{ marginTop: "1rem" }}>
+      <button
+        onClick={() => setShowHint(true)}
+        style={{ padding: "0.5rem 1rem", marginBottom: "0.5rem" }}
+      >
+        Show Hint
+      </button>
+
+      {showHint && (
+        <div
+          style={{
+            backgroundColor: "#222",
+            color: "#fff",
+            padding: "1rem",
+            borderRadius: "8px",
+          }}
+        >
+          <p>
+            1) Key used for XOR decryption: <strong>Valentine</strong>
+          </p>
+          <p>
+            2) Length of cipher (bytes): <strong>448</strong>
+          </p>
+          <p>
+            3) Extracted binary length (bits): <strong>448</strong>
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function App() {
   const [riddleAnswer, setRiddleAnswer] = useState("");
   const [riddleSubmitted, setRiddleSubmitted] = useState(false);
@@ -74,6 +111,10 @@ Python Decryption Instructions:
             value={cipherMessage + "\n\n" + pythonInstructions}
             style={{ width: "100%", height: "300px", padding: "1rem" }}
           />
+
+          {/* Hint button section */}
+          <HintSection />
+
           <h3>Enter the decoded message:</h3>
           <input
             type="text"
