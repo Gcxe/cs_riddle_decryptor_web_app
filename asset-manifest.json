@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cs_riddle_decryptor_web_app/static/css/main.f855e6bc.css",
-    "main.js": "/cs_riddle_decryptor_web_app/static/js/main.177fc6af.js",
+    "main.js": "/cs_riddle_decryptor_web_app/static/js/main.178d892e.js",
     "static/js/453.d16d6650.chunk.js": "/cs_riddle_decryptor_web_app/static/js/453.d16d6650.chunk.js",
     "index.html": "/cs_riddle_decryptor_web_app/index.html",
     "main.f855e6bc.css.map": "/cs_riddle_decryptor_web_app/static/css/main.f855e6bc.css.map",
-    "main.177fc6af.js.map": "/cs_riddle_decryptor_web_app/static/js/main.177fc6af.js.map",
+    "main.178d892e.js.map": "/cs_riddle_decryptor_web_app/static/js/main.178d892e.js.map",
     "453.d16d6650.chunk.js.map": "/cs_riddle_decryptor_web_app/static/js/453.d16d6650.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.177fc6af.js"
+    "static/js/main.178d892e.js"
   ]
 }
